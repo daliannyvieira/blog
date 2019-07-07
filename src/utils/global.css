@@ -31,13 +31,24 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  width: 50vw;
+  width: 45vw;
+  /* background-color: pink; */
+}
+
+@media (max-width: 1024px) {
+  .main-container {
+    width: 90vw;
+  }
 }
 
 header {
   display: flex;
   align-items: center;
   padding: 1rem 0;
+}
+
+h1 {
+  font-size: 1.5rem;
 }
 
 .rainbow {
@@ -76,13 +87,13 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  max-width: 45vw;
   min-height: 85vh;
+  /* background-color: olive; */
   margin: auto;
 }
 
 .main-bio {
-  flex: 0 0 80%;
+  /* flex: 0 0 80%; */
   margin-right: 1.5rem;
 }
 
@@ -151,11 +162,17 @@ header {
   }
 }
 
-@media (max-width: 375px) {
+footer {
+  display: flex;
+  align-items: center;
+  padding: 1rem 0;
+}
+
+/* @media (max-width: 375px) {
   footer {
     display: block;
   }
-}
+} */
 
 .gatsby-highlight {
   margin-bottom: 1.75em;

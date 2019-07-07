@@ -76,7 +76,7 @@
     "url": "git+https://github.com/daliannyvieira/blog.git"
   },
   "scripts": {
-    "deploy": "gatsby build && gh-pages -d public -b gh-pages",
+    "deploy": "gatsby build && gh-pages -d public -b master",
     "build": "gatsby build",
     "dev": "gatsby develop",
     "develop": "gatsby develop",
