@@ -4,8 +4,6 @@ import { Link } from 'gatsby';
 import { rhythm, scale } from '../utils/typography';
 import Logo from '../../content/assets/cat.svg';
 import SOCIAL from '../constants/social';
-import ShineOn from './shineOn';
-import Mandala from './mandala';
 
 interface LayoutProps {
   location: Location;
@@ -25,7 +23,6 @@ const Layout: React.FunctionComponent<LayoutProps> = ({
 
   return (
     <div className="main-container">
-      <Mandala>
       <header>
         <div className="logo rainbow">
           <Logo
@@ -65,23 +62,18 @@ const Layout: React.FunctionComponent<LayoutProps> = ({
           </li>
         </ul>
       </header>
-      </Mandala>
-        <ShineOn>
-          <main>{children}</main>
-        </ShineOn>
-      <Mandala>
-        <footer>
-          © {new Date().getFullYear()} Dali
-          <div>
-            {SOCIAL.map((s, idx) => (
-              <React.Fragment key={s.kind}>
-                <a href={s.url}>{s.kind}</a>
-                {idx === SOCIAL.length - 1 ? '' : <span> / </span>}
-              </React.Fragment>
-            ))}
-          </div>
-        </footer>
-      </Mandala>
+      <main>{children}</main>
+      <footer>
+        © {new Date().getFullYear()} Dali
+        <div>
+          {SOCIAL.map((s, idx) => (
+            <React.Fragment key={s.kind}>
+              <a href={s.url}>{s.kind}</a>
+              {idx === SOCIAL.length - 1 ? '' : <span> / </span>}
+            </React.Fragment>
+          ))}
+        </div>
+      </footer>
     </div>
   );
 };

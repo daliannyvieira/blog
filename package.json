@@ -36,7 +36,6 @@
     "gatsby-source-filesystem": "2.0.27",
     "gatsby-transformer-remark": "2.3.5",
     "gatsby-transformer-sharp": "2.1.17",
-    "mo-js": "^0.288.2",
     "prismjs": "1.15.0",
     "react": "16.8.4",
     "react-dom": "16.8.4",
